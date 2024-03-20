@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showMessage(message, gifSrc) {
-        messageContainer.style.alignItems = 'center';
+        // messageContainer.style.alignItems = 'center';
         messageContainer.innerHTML = `${message}  <img height = 60px src="assets/${gifSrc}" alt="Win GIF">`;
         blurBackground.style.display = 'flex';
         blurBackground.style.fontSize = '25px';
@@ -144,12 +144,14 @@ document.addEventListener('DOMContentLoaded', () => {
     restartHardBtn.addEventListener('click', () => {
         // Adjust game difficulty for hard mode
         cardValues = ['circle', 'circle', 'square', 'square', 'star', 'star', 'triangle', 'triangle', 'diamond', 'diamond', 'trapezium', 'trapezium'];
+        stopTimer();
         resetGame(); // Restart the game with new settings
     });
 
     restartEasyBtn.addEventListener('click', () => {
         // Adjust game difficulty for easy mode
         cardValues = ['circle', 'circle', 'square', 'square', 'star', 'star','diamond', 'diamond'];
+        stopTimer();
         resetGame(); // Restart the game with new settings
     });
 
