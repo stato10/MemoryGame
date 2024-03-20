@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
             blurBackground.style.display = 'none';
+            resetGame();
         }, 5000); // Adjust the delay as needed
     }
 
@@ -86,7 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (lives === 0) {
             stopTimer();
             showMessage('Game Over! You ran out of lives.', 'game-over.gif');
-            resetGame();
         }
     }
 
