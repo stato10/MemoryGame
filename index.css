@@ -198,7 +198,7 @@ li{
 
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .board {
         grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); /* Adjust the minmax for smaller screens */
     }
