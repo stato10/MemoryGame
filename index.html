@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="container d-flex align-items-center justify-content-center">
+
+        <div class="headline">
+            
+            <div class="divIcon">
+                <img class="icon" height="50px" src="/assets/memory-game.png" alt="" srcset="">
+            </div>
+
+            <h1>Memory Game</h1>
+            
+        </div>
+        
+        <div class="rank"></div>
+
+        
+
+        <div id="game-board" class="board d-flex">
+            
+        </div>
+
+        <div id="info">
+            <div id="timer"> Time: 0s</div>
+            <div id="lives">
+                <img height="50px" src="/memoryCardGame/assets/heart.png" alt="Heart" srcset="">
+                <img height="50px" src="/memoryCardGame/assets/heart.png" alt="Heart" srcset="">
+                <img height="50px" src="/memoryCardGame/assets/heart.png" alt="Heart" srcset="">   
+                <img height="50px" src="/memoryCardGame/assets/heart.png" alt="Heart" srcset="">  
+            </div>
+        </div>
+
+        <div class="level-buttons">
+            <button id="restart-btn">Restart</button>
+            <button id="restart-hard-btn" class="level-btn">Hard</button>
+            <button id="restart-easy-btn" class="level-btn">Easy</button>
+        </div>
+
+
+        <div class="blur-background" id="blur-background">
+            <div class="message-container" id="message-container"></div>
+        </div>
+
+
+    </div>
+    <script defer src="app.js"></script>
+</body>
+</html>
