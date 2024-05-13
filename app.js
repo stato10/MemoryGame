@@ -118,7 +118,7 @@ function createCard(value) {
     card.dataset.value = value;
 
     const cardImage = document.createElement('img');
-    cardImage.src = `/memoryCardGame/assets/${value}.gif`;
+    cardImage.src = `assets/${value}.gif`;
     cardImage.alt = "Memory Game Card";
     
     const cardCover = document.createElement('div');
@@ -162,7 +162,7 @@ function createCard(value) {
         livesDisplay.innerHTML = ''; 
         for (let i = 0; i < lives; i++) {
             const heartImage = document.createElement('img');
-            heartImage.src = '/memoryCardGame/assets/heart.png';
+            heartImage.src = 'assets/heart.png';
             heartImage.height = 50;
             livesDisplay.appendChild(heartImage);
         }
