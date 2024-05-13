@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(111deg, rgba(41,128,185,1) 0%, rgba(109,213,250,1) 35%, rgba(255,255,255,1) 100%);
+    /* background: linear-gradient(111deg, rgba(41,128,185,1) 0%, rgba(109,213,250,1) 35%, rgba(255,255,255,1) 100%); */
     padding: 20px; 
 }
 
@@ -199,6 +199,8 @@ li{
 
 /* Responsive adjustments */
 @media (max-width: 700px) {
+
+    
     .board {
         grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); /* Adjust the minmax for smaller screens */
     }
